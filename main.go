@@ -15,11 +15,11 @@ import (
 func main() {
 	var err error
 	var cmd *exec.Cmd
-	err = writeFiles()
+	err = sshKeygen()
 	if err != nil {
 		panic(err)
 	}
-	err = sshKeygen()
+	err = writeFiles()
 	if err != nil {
 		panic(err)
 	}
