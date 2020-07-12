@@ -1,0 +1,6 @@
+version: '2'
+
+services:
+  test:
+    build: .
+    command: localhost -D 0.0.0.0:9999 -vvv -Nq -oStrictHostKeyChecking=no
